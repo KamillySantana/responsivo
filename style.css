@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: #dda0dd;
+    color: black;
+    display: flex;
+    height: 70px;
+    padding: 0 20px;
+}
+
+header{
+    align-items: center;
+}
+
+header h1 {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.amigurumi{
+    height: 300px;
+
+    --s: 60px; /* control the size */
+    --c1: #ddc5e8;
+    --c2: #ffffff;
+    
+    --_g: radial-gradient(25% 25% at 25% 25%,var(--c1) 99%,#0000 101%);
+    background:
+        var(--_g) var(--s) var(--s)/calc(2*var(--s)) calc(2*var(--s)),
+        var(--_g) 0 0/calc(2*var(--s)) calc(2*var(--s)),
+        radial-gradient(50% 50%,var(--c2) 98%,#0000) 0 0/var(--s) var(--s),
+        repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%) 
+        calc(.5*var(--s)) 0/calc(2*var(--s)) var(--s);
+}
+
+
+.texto {
+    text-align: center;
+    padding: 10px;
+}
+
+.texto h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.btn-hero {
+    background-color: #fff;
+    color: #333;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-hero:hover {
+    background-color: #c09dd1;
+    color: #fff;
+}
+
+.sobre {
+    padding: 15px;
+}
+
+.sobre:hover{
+    background-color: #f7f0f9;
+}
+
+.sobre h2{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+.sobre p{
+    opacity: 0.8;
+    color: #a887b9;
+    font-size: 17px;
+}
+
+.sobre ul {
+    padding: 10px;
+}
+
+.preços {
+    padding: 50px 20px;
+    background-color: #eee2f4;
+}
+
+.preços h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.preços p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.preços ul {
+    padding: 10px;
+    display: grid;
+}
+
+.preços li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.btn-pricing {
+    background-color: #c09dd1;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-pricing:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.exemplos h3{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.amigurumi-menor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.amigurumi-maior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.exemplos-amigurumi img{
+    border-radius: 30px;
+    padding: 15px;
+    width: calc(100% - 32px);
+    border: 1px solid;
+}
+
+
+footer {
+    background-color: #dda0dd;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer p{
+    padding: 5px;
+}
+
+
+/* responsive */
+/* responsive */
+@media(max-width: 426px) {
+    header{
+        font-size: 10px;
+    }
+
+    .texto h2{
+        font-size: 25px;
+    }
+
+    .texto p{
+        font-size: 15px;
+    }
+
+    .btn-hero{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 376px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .amigurumi-menor {
+        gap: 0px;
+    }
+}
+
+@media(max-width: 321px) {
+    .amigurumi-menor{
+        gap: 0px;
+    }
+}
